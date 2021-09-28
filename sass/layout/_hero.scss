@@ -5,3 +5,21 @@
   background-size: cover;
   min-height: 494px;
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../assets/images/hero/hero-bg-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../assets/images/hero/hero-bg-desktop1200.jpg");
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero {
+    background-image: url("../assets/images/hero/hero-bg-desktop1920.jpg");
+  }
+}
