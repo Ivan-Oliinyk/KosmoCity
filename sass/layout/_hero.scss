@@ -1,20 +1,128 @@
 .hero {
+  position: relative;
   background-image: url("../assets/images/hero/hero-bg-mobile.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 494px;
+
+  .container {
+    position: relative;
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: all 0.7s linear;
+  }
+
+  .hero-content__bg {
+    position: absolute;
+    right: 0;
+    background-image: url("../assets/images/hero/bg-poligone.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 494px;
+    width: 100%;
+    margin-left: auto;
+    transition: all 0.7s linear;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 165px;
+      left: -220px;
+      transform: rotate(-60deg);
+      display: block;
+      width: 700px;
+      height: 10px;
+      background-color: #fff;
+    }
+  }
+
+  .hero-btn {
+  }
+
+  .hero__title {
+    margin-top: 93px;
+    max-width: 240px;
+    text-transform: uppercase;
+    color: #00aeb3;
+    @include font($fs: 22px, $fw: 800, $lh: 27px);
+  }
+
+  .hero__adress {
+    margin-top: 25px;
+    @include font($fs: 14px, $fw: 800, $lh: 18px);
+    color: #696969;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: url("../assets/images/hero/hero-bg-tablet.jpg");
+
+    .hero-content__bg {
+      &:before {
+        left: -200px;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .hero {
+    .hero-content__bg {
+      max-width: 970px;
+      background-image: url("../assets/images/hero/bg-poligone-tablet.png");
+      &:before {
+        transform: rotate(-59deg);
+      }
+    }
+
+    .hero-btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    .hero-content__bg {
+      height: 100%;
+      &:before {
+        transform: rotate(-59deg);
+        left: -175px;
+        top: 210px;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url("../assets/images/hero/hero-bg-desktop1200.jpg");
+
+    .container {
+      padding-right: 100px;
+      padding-bottom: 30px;
+    }
+
+    .hero__title {
+      margin-top: 0;
+      max-width: 320px;
+      @include font($fs: 30px, $fw: 800, $lh: 45px);
+    }
+
+    .hero__adress {
+      margin-top: 83px;
+      @include font($fs: 20px, $fw: 800, $lh: 36px);
+    }
+  }
+
+  .hide-block {
+    transform: translateX(130%);
   }
 }
 

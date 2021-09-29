@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KosmoCity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
@@ -70,7 +76,87 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container"></div>
+        <div
+          class="hero-content hero-content__bg hide-block js-hide-block"
+        ></div>
+        <div class="container hide-block hide-block js-hide-block">
+          <button class="btn hero-btn" type="button">Сотрудничать</button>
+          <h1 class="hero__title">ТОРГОВО- РАЗВЛЕКАТЕЛЬНЫЙ КОМПЛЕКС</h1>
+          <p class="hero__adress">ул. Космическая, 119</p>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="container">
+          <div class="promo-logo">
+            <img
+              class="promo-logo__img"
+              src="./assets/images/promo/logo-promo.png"
+              alt="Логотип"
+              width="281"
+              height="46"
+            />
+          </div>
+          <div>
+            <div class="promo-rectangle">Почему мы ?</div>
+          </div>
+          <div class="promo-wrapper-content">
+            <ul class="promo-list js-promo-list">
+              <li class="promo-item">
+                <div class="promo-item__pologonal">
+                  <div class="promo-item__counter js-counter"></div>
+                </div>
+                <div class="promo-item__text">
+                  Удачное расположение объекта на одной из крупнейших
+                  транспортных магистралей города
+                </div>
+              </li>
+              <li class="promo-item">
+                <div class="promo-item__pologonal">
+                  <div class="promo-item__counter js-counter"></div>
+                </div>
+                <div class="promo-item__text">
+                  Расположение в крупном, по количеству жителей, районе
+                  Запорожья
+                </div>
+              </li>
+              <li class="promo-item">
+                <div class="promo-item__pologonal">
+                  <div class="promo-item__counter js-counter"></div>
+                </div>
+                <div class="promo-item__text">
+                  Вакантность 1-4 этажей и фактическая готовность помещений к
+                  внутренней отделке арендатора
+                </div>
+              </li>
+              <li class="promo-item">
+                <div class="promo-item__pologonal">
+                  <div class="promo-item__counter js-counter"></div>
+                </div>
+                <div class="promo-item__text">
+                  Возможность реконструкции, при демонтаже шатровых плит
+                  перекрытий, могут быть объединены этажи (уровни) до высоты
+                  потолков - 9м.
+                </div>
+              </li>
+            </ul>
+            <div class="promo-wrapper-img">
+              <img
+                class="promo-img"
+                src="./assets/images/promo/promo-img-1-mobile.jpg"
+                alt="Изображение Космо Сити"
+                width="220"
+                height="180"
+              />
+              <img
+                class="promo-img"
+                src="./assets/images/promo/promo-img-2-mobile.jpg"
+                alt="Изображение Космо Сити"
+                width="220"
+                height="180"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script src="index.js"></script>
