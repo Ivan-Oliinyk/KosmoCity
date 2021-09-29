@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 494px;
+  overflow: hidden;
 
   .container {
     position: relative;
@@ -128,6 +129,7 @@
 
 @media screen and (min-width: 1920px) {
   .hero {
+    // min-height: 600px;
     background-image: url("../assets/images/hero/hero-bg-desktop1920.jpg");
   }
 }

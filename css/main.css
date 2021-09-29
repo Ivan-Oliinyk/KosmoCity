@@ -662,6 +662,7 @@ summary {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 494px;
+  overflow: hidden;
 }
 
 .hero .container {
