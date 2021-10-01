@@ -310,8 +310,14 @@ summary {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 20px;
-    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -818,6 +824,7 @@ summary {
   min-height: 33px;
   background-image: url("../assets/images/promo/promo-rectangle.png");
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -828,8 +835,11 @@ summary {
   font-family: "Montserrat", sans-serif;
 }
 
-.promo .promo-list .promo-item {
+.promo .promo-list {
   margin-bottom: 20px;
+}
+
+.promo .promo-list .promo-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,16 +943,142 @@ summary {
   }
   .promo .promo-list {
     margin-right: 15px;
+    margin-bottom: 0;
   }
   .promo .promo-wrapper-img {
     min-width: 320px;
+    min-height: 235px;
   }
   .promo .promo-img:nth-of-type(1) {
     left: 0;
+    top: 40px;
   }
   .promo .promo-img:nth-of-type(2) {
     left: 100px;
-    top: 95px;
+    top: -56px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .promo .promo-wrapper-content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .promo .promo-list {
+    margin-right: 20px;
+  }
+  .promo .promo-list .promo-item:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  .promo .promo-item__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.63;
+  }
+  .promo .promo-wrapper-img {
+    min-width: 392px;
+    min-height: 285px;
+  }
+  .promo .promo-img {
+    min-width: 264px;
+    min-height: 216px;
+  }
+  .promo .promo-img:nth-of-type(1) {
+    left: 0;
+    top: 70px;
+  }
+  .promo .promo-img:nth-of-type(2) {
+    left: 100px;
+    top: -56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promo .promo-rectangle {
+    min-width: 160px;
+    min-height: 42px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 2;
+  }
+  .promo .promo-list {
+    margin-right: 30px;
+  }
+  .promo .promo-list .promo-item:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+  .promo .promo-list .promo-item__pologonal {
+    margin-right: 15px;
+    min-width: 45px;
+    height: 52px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0.92;
+  }
+  .promo .promo-item__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  .promo .promo-wrapper-img {
+    min-width: 500px;
+    min-height: 362px;
+  }
+  .promo .promo-img {
+    min-width: 316px;
+    min-height: 260px;
+  }
+  .promo .promo-img:nth-of-type(1) {
+    left: 0;
+    top: 100px;
+  }
+  .promo .promo-img:nth-of-type(2) {
+    left: 185px;
+    top: -56px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .promo .promo-logo__img {
+    width: 688px;
+    height: 112px;
+  }
+  .promo .promo-rectangle {
+    margin-bottom: 60px;
+    min-width: 375px;
+    min-height: 97px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 2.19;
+    background-image: url("../assets/images/promo/promo-rectangle-desktop.png");
+  }
+  .promo .promo-item__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+  }
+  .promo .promo-list {
+    margin-right: 40px;
+  }
+  .promo .promo-list .promo-item:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+  .promo .promo-wrapper-img {
+    min-width: 759px;
+    min-height: 435px;
+  }
+  .promo .promo-img {
+    min-width: 500px;
+    min-height: 334px;
+  }
+  .promo .promo-img:nth-of-type(1) {
+    left: 0;
+    top: 100px;
+  }
+  .promo .promo-img:nth-of-type(2) {
+    left: 260px;
+    top: -160px;
   }
 }
 /*# sourceMappingURL=main.css.map */
