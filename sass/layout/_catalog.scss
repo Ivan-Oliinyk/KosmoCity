@@ -1,0 +1,197 @@
+.catalog {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background: linear-gradient(to right bottom, #f3fdfe 10.05%, #e0feff 89.1%);
+
+  .catalog__title {
+    margin-left: 15px;
+    font-family: "Montserrat", sans-serif;
+    @include font($fs: 19px, $fw: 800, $lh: 22px);
+    text-transform: uppercase;
+    color: #00aeb3;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .catalog__item {
+    margin: 20px 20px;
+    cursor: pointer;
+  }
+
+  .catalog__btn {
+    padding: 10px;
+    display: flex;
+    min-width: 120px;
+    width: 120px;
+    min-height: 145px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+    border-radius: 15px;
+  }
+
+  .catalog__btn:hover,
+  .catalog__btn:focus {
+    background-color: #fff;
+
+    .catalog__text {
+      color: #00aeb3;
+    }
+  }
+
+  .catalog__item-rectangle {
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/catalog/svg/rectangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 74px;
+    height: 86px;
+  }
+
+  .catalog__item-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &.icon-1 {
+      background-image: url("../assets/images/catalog/svg/sport.svg");
+      width: 44px;
+      height: 51px;
+    }
+
+    &.icon-2 {
+      background-image: url("../assets/images/catalog/svg/shouse.svg");
+      width: 55px;
+      height: 24px;
+    }
+
+    &.icon-3 {
+      background-image: url("../assets/images/catalog/svg/coffee.svg");
+      width: 43px;
+      height: 45px;
+    }
+
+    &.icon-4 {
+      background-image: url("../assets/images/catalog/svg/shops\ .svg");
+      width: 48px;
+      height: 40px;
+    }
+  }
+
+  .catalog__text {
+    display: block;
+    text-transform: uppercase;
+    @include font($fs: 12px, $fw: 800, $lh: 14px);
+    color: #696969;
+    display: block;
+    text-align: center;
+    transition: color 0.25s linear;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .catalog {
+    .catalog__list {
+      margin: 0 auto;
+      max-width: 400px;
+    }
+
+    .catalog__btn {
+      padding: 15px;
+      min-width: 140px;
+      width: 140px;
+      min-height: 210px;
+    }
+
+    .catalog__item-rectangle {
+      width: 111px;
+      height: 129px;
+    }
+
+    .catalog__text {
+      @include font($fs: 16px, $fw: 800, $lh: 20px);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .catalog__title {
+      @include font($fs: 26px, $fw: 800, $lh: 32px);
+    }
+
+    .catalog__list {
+      max-width: 100%;
+      justify-content: space-around;
+    }
+
+    .catalog__btn {
+      min-width: 160px;
+      width: 160px;
+      min-height: 220px;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .catalog {
+    .catalog__title {
+      @include font($fs: 32px, $fw: 800, $lh: 40px);
+    }
+
+    .catalog__list {
+      justify-content: space-around;
+    }
+
+    .catalog__btn {
+      min-width: 180px;
+      width: 180px;
+      min-height: 240px;
+    }
+
+    .catalog__item-rectangle {
+      margin-bottom: 20px;
+      width: 145px;
+      height: 168px;
+    }
+
+    .catalog__text {
+      @include font($fs: 20px, $fw: 800, $lh: 30px);
+    }
+
+    .catalog__item-icon {
+      &.icon-1 {
+        width: 87px;
+        height: 101px;
+      }
+
+      &.icon-2 {
+        width: 109px;
+        height: 48px;
+      }
+
+      &.icon-3 {
+        width: 85px;
+        height: 89px;
+      }
+
+      &.icon-4 {
+        width: 94px;
+        height: 78px;
+      }
+    }
+  }
+}
