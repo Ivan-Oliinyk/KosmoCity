@@ -29,4 +29,23 @@ window.addEventListener("DOMContentLoaded", () => {
       counterLists[i].textContent = i + 1;
     }
   }
+
+  //backdrop in catalog
+  const catalogBtn = document.querySelectorAll(".catalog__btn");
+  const backdropRefs = {
+    wrapper: document.querySelector(".js-catalog-backdrop"),
+    theme: document.querySelectorAll(".js-catalog-backdrop__theme"),
+  };
+
+  catalogBtn.forEach((item, index) =>
+    item.addEventListener("click", () => {
+      backdropRefs.wrapper.classList.remove("display-none");
+      hideThemeBlock();
+      backdropRefs.theme[index].classList.remove("display-none");
+    })
+  );
+
+  function hideThemeBlock() {
+    backdropRefs.theme.forEach((block) => block.classList.add("display-none"));
+  }
 });
