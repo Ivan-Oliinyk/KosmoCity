@@ -924,4 +924,25 @@ summary {
     left: 210px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .promo .promo-wrapper-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .promo .promo-list {
+    margin-right: 15px;
+  }
+  .promo .promo-wrapper-img {
+    min-width: 320px;
+  }
+  .promo .promo-img:nth-of-type(1) {
+    left: 0;
+  }
+  .promo .promo-img:nth-of-type(2) {
+    left: 100px;
+    top: 95px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
