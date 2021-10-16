@@ -119,10 +119,11 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
+  // max-width: -;
 
   .close {
     position: absolute;
-    top: -15px;
+    top: 13px;
     right: 0;
     padding: 10px;
     font-size: 25px;
@@ -149,10 +150,11 @@
   }
 
   .catalog-backdrop-list {
+    min-width: 100%;
     padding: 35px 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    // justify-content: space-around;
     border-radius: 0 15px 15px 15px;
     background-color: #fff;
   }
@@ -163,6 +165,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 10px;
   }
 
   .catalog-backdrop-logo {
@@ -301,11 +304,15 @@
     .catalog-backdrop__theme {
       margin-left: auto;
       margin-right: auto;
-      max-width: 380px;
+      // max-width: 380px;
     }
 
     .catalog-backdrop-list {
       border-radius: 0 0 15px 15px;
+    }
+
+    .catalog-backdrop-item {
+      margin-right: 20px;
     }
   }
 
@@ -432,6 +439,15 @@
   .catalog-backdrop-brands {
     .catalog-backdrop-brands__list {
       min-width: 950px;
+    }
+  }
+  .catalog-backdrop-wrapper {
+    .catalog-backdrop-list {
+      padding: 35px;
+    }
+
+    .catalog-backdrop-item {
+      margin-right: 35px;
     }
   }
 }
