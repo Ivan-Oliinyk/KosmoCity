@@ -1,4 +1,125 @@
 .scheme {
-  height: 200px;
-  background-color: #green;
+  padding-bottom: 50px;
+
+  .sceme-title-wrapper {
+    padding: 10px 15px 10px 35px;
+    background: linear-gradient(271.51deg, #e0feff 10.05%, #02b2b7 89.1%);
+  }
+
+  .scheme-tittle {
+    @include font($fs: 18px, $fw: 800, $lh: 23px);
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .select {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: 10px;
+    box-shadow: 0 0 3px grey;
+
+    .selected-content {
+      margin-left: auto;
+    }
+  }
+
+  .scheme-item {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .scheme-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    display: block;
+    border-radius: 10px;
+    background: rgba(148, 153, 164, 0.19);
+    text-align: center;
+    box-shadow: 0 0 3px grey;
+    // cursor: pointer;
+  }
+
+  .scheme-list:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  .scheme-btn {
+    padding: 10px 15px;
+    width: 100%;
+    color: #02b2b7;
+    text-transform: uppercase;
+    @include font($fs: 16px, $fw: 800, $lh: 23px);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: box-shadow 0.25s linear, color 0.25s linear,
+      text-shadow 0.25s linear;
+  }
+
+  .scheme-btn:hover,
+  .scheme-btn:focus {
+    box-shadow: inset 0 0 33px #02b2b7;
+    color: #fff;
+    text-shadow: 0 0 1px grey;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scheme {
+    .sceme-title-wrapper {
+      padding-left: 100px;
+    }
+
+    .scheme-tittle {
+      @include font($fs: 22px, $fw: 800, $lh: 23px);
+    }
+
+    .scheme-content-wrapper {
+      display: flex;
+    }
+
+    .scheme-content__img-wrapper {
+      order: 2;
+    }
+
+    .scheme-item {
+      margin-top: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scheme {
+    .scheme-item {
+      margin-right: 40px;
+    }
+
+    .scheme-list {
+      width: 250px;
+    }
+
+    .scheme-list:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+
+    .scheme-btn {
+      @include font($fs: 20px, $fw: 800, $lh: 23px);
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .scheme {
+    .sceme-title-wrapper {
+      padding-left: 200px;
+    }
+
+    .scheme-tittle {
+      @include font($fs: 42px, $fw: 800, $lh: 42px);
+    }
+  }
 }

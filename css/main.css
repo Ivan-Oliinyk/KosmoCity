@@ -417,6 +417,50 @@ summary {
   background-position: 0 0;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: #02b2b7;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+  min-height: 45px;
+  line-height: 3;
+  background: #02b2b7;
+  overflow: hidden;
+  border-radius: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
 .header {
   font-family: "Roboto";
   color: #121212;
@@ -1705,7 +1749,139 @@ summary {
 }
 
 .scheme {
-  height: 200px;
-  background-color: #green;
+  padding-bottom: 50px;
+}
+
+.scheme .sceme-title-wrapper {
+  padding: 10px 15px 10px 35px;
+  background: linear-gradient(271.51deg, #e0feff 10.05%, #02b2b7 89.1%);
+}
+
+.scheme .scheme-tittle {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: white;
+}
+
+.scheme .select {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 3px grey;
+          box-shadow: 0 0 3px grey;
+}
+
+.scheme .select .selected-content {
+  margin-left: auto;
+}
+
+.scheme .scheme-item {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scheme .scheme-list {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  display: block;
+  border-radius: 10px;
+  background: rgba(148, 153, 164, 0.19);
+  text-align: center;
+  -webkit-box-shadow: 0 0 3px grey;
+          box-shadow: 0 0 3px grey;
+}
+
+.scheme .scheme-list:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.scheme .scheme-btn {
+  padding: 10px 15px;
+  width: 100%;
+  color: #02b2b7;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.44;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: color 0.25s linear, text-shadow 0.25s linear, -webkit-box-shadow 0.25s linear;
+  transition: color 0.25s linear, text-shadow 0.25s linear, -webkit-box-shadow 0.25s linear;
+  transition: box-shadow 0.25s linear, color 0.25s linear, text-shadow 0.25s linear;
+  transition: box-shadow 0.25s linear, color 0.25s linear, text-shadow 0.25s linear, -webkit-box-shadow 0.25s linear;
+}
+
+.scheme .scheme-btn:hover,
+.scheme .scheme-btn:focus {
+  -webkit-box-shadow: inset 0 0 33px #02b2b7;
+          box-shadow: inset 0 0 33px #02b2b7;
+  color: #fff;
+  text-shadow: 0 0 1px grey;
+}
+
+@media screen and (min-width: 768px) {
+  .scheme .sceme-title-wrapper {
+    padding-left: 100px;
+  }
+  .scheme .scheme-tittle {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.05;
+  }
+  .scheme .scheme-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .scheme .scheme-content__img-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .scheme .scheme-item {
+    margin-top: 0;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scheme .scheme-item {
+    margin-right: 40px;
+  }
+  .scheme .scheme-list {
+    width: 250px;
+  }
+  .scheme .scheme-list:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+  .scheme .scheme-btn {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .scheme .sceme-title-wrapper {
+    padding-left: 200px;
+  }
+  .scheme .scheme-tittle {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
