@@ -167,7 +167,7 @@
                 <div class="catalog__item-rectangle">
                   <div class="catalog__item-icon icon-1"></div>
                 </div>
-                <p class="catalog__text">отдых и спорт</p>
+                <h3 class="catalog__text">отдых и спорт</h3>
               </button>
             </li>
             <li class="catalog__item">
@@ -175,7 +175,7 @@
                 <div class="catalog__item-rectangle">
                   <div class="catalog__item-icon icon-2"></div>
                 </div>
-                <p class="catalog__text">одежда и обувь</p>
+                <h3 class="catalog__text">одежда и обувь</h3>
               </button class="catalog__btn">
             </li>
             <li class="catalog__item">
@@ -183,7 +183,7 @@
                 <div class="catalog__item-rectangle">
                   <div class="catalog__item-icon icon-3"></div>
                 </div>
-                <p class="catalog__text">кафе и рестораны</p>
+                <h3 class="catalog__text">кафе и рестораны</h3>
               </button>
             </li>
             <li class="catalog__item">
@@ -191,10 +191,12 @@
                 <div class="catalog__item-rectangle">
                   <div class="catalog__item-icon icon-4"></div>
                 </div>
-                <p class="catalog__text">разное</p>
+                <h3 class="catalog__text">разное</h3>
               </button>
             </li>
           </ul>
+
+          <!-- Отдых и спорт -->
           <div class="catalog-backdrop-wrapper js-catalog-backdrop display-none">
             <button class="close js-close display-none" type="button">&#10006;</button>
             <div class="catalog-backdrop__theme js-catalog-backdrop__theme display-none">
@@ -204,28 +206,36 @@
                   <div class="catalog-backdrop-logo">
                     <img class="catalog-backdrop-logo__img" src="./assets/images/catalog/logo-brands/cinema-kosmos.png" alt="Лого Кинотеатр Космос">
                   </div>
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
                 </li>
                 <li class="catalog-backdrop-item">
                   <div class="catalog-backdrop-logo">
                     <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/laser-city.png" alt="Лого Лазер сити">
                   </div>
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
                 </li>
                 <li class="catalog-backdrop-item">
                   <div class="catalog-backdrop-logo">
                     <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/roller-city.png" alt="Лого роллер сити">
                   </div>
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>                 
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>                 
                 </li>
                 <li class="catalog-backdrop-item">
                   <div class="catalog-backdrop-logo">
                     <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/minifootball.png" alt="Лого минифутбол">
                   </div>
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
+                </li>
+                <li class="catalog-backdrop-item">
+                  <div class="catalog-backdrop-logo">
+                    <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/minifootball.png" alt="Лого минифутбол">
+                  </div>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
                 </li>
               </ul>
             </div>
+
+            <!-- одежда и обувь -->
             <div class="js-catalog-backdrop__theme display-none">
               <h3 class="catalog-backdrop__title">одежда и обувь</h3>
               <ul class="catalog-backdrop-list">
@@ -233,25 +243,31 @@
                   <div class="catalog-backdrop-logo">
                     <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/mida.png" alt="Лого Mida">
                   </div>
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
                 </li>
               </ul>
             </div>
+
+            <!-- кафе и ресТораны -->
             <div class="js-catalog-backdrop__theme display-none">
               <h3 class="catalog-backdrop__title">кафе и ресТораны</h3>
               <ul class="catalog-backdrop-list">
                 <li class="catalog-backdrop-item">
                   <div class="catalog-backdrop-logo">
-                    <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/fifth.png" alt="Лого Пятый гриб">
+                    <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/fifth.png" alt="Лого Пяный гриб">
                   </div>
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
                 </li>
                 <li class="catalog-backdrop-item">
-                  <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/cafe.png" alt="Лого Cafe">
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>
+                  <div class="catalog-backdrop-logo">
+                    <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/cafe.png" alt="Лого Cafe">
+                  </div>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
                 </li>
               </ul>
             </div>
+
+            <!-- разное -->
             <div class="js-catalog-backdrop__theme display-none">
               <h3 class="catalog-backdrop__title">разное</h3>
               <ul class="catalog-backdrop-list">
@@ -259,17 +275,214 @@
                   <div class="catalog-backdrop-logo">
                     <img class="catalog-backdrop-logo" src="./assets/images/catalog/logo-brands/strans.png" alt="Лого strans">
                   </div>
-                  <a href="#" class="catalog-backdrop-link btn">Узнать больше</a>
+                  <button class="catalog-backdrop-link btn js-go-on-slider" type="button">Узнать больше</button>
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+        <div class="catalog-backdrop-brands backdrop js-slider-wrapper display-none">
+          <ul class="catalog-backdrop-brands__list">
+
+            <!-- Кинотеатр «Космос» -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/cinema.jpg" alt="Роллер Сити">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  Кинотеатр «Космос»
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  Роллер Сити — центр семейного отдыха и занятий спортом в Запорожье. Территория развлечений для всей семьи представляет европейский каток на роликах площадью 800 м.кв. Мягкий детский лабиринт, настольный теннис, аэрохоккей, настольный футбол, мини бильярд, Playstation (автомобильный симулятор), роллер бар, Wi-Fi в Запорожье.
+                  
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next  js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+            <!-- Лазер-сити -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/laser-city.jpg" alt="Лазер сити">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  «Лазер-сити» спортивно-игровое помещение
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  Военно-спортивная игра.<br>
+                    ● Имитация боевых действий в городских условиях;<br>
+                    ● Игровая зона 1500 м2;<br>
+                    ● Новый вид лазертаг оборудования;<br>
+                    ● Обучение игроков тактике ведения боя.
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next  js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+            <!-- Роллер сити -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/roller-city.jpg" alt="Роллер Сити">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  Центр семейного отдыха и занятий спортом «Роллер сити»
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  3D кинотеатр под названием «Космос». <br>
+                  Кинотеатр состоит из трех комфортных кинозалов с серебряными экранами. Цена билетов составляет от 50 до 70 гривен. Если у вас нет своих 3D очков, их можно приобрести на месте.
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next  js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+             <!-- МиниФутбол -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/miny-soccer.jpg" alt="МиниФутбол">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  Детская игровая площадка «МиниФутбол»
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  Секция мини-футбола для детей разного возраста. Её могут посещать как малыши, так и подростки. Мы занимаемся с детьми по системе, что предполагает разделение юных футболистов по возрасту и уровню мастерства. Это способствует наиболее быстрому прогрессу. Занятия проходят в максимально комфортных условиях. 
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next  js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+            <!-- Спортивный тренажерный фитнесс клуб «Максимус» -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/sport.jpg" alt="Спортзал">
+                <h4 class="catalog-backdrop-brands__item-title">Спортивный тренажерный фитнесс клуб «Максимус»</h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  Спортивный клуб "Максимус" расположен в Коммунарском районе. Площадь зала 2 000 кв.м. Основную часть клуба занимает тренажерный зал с современными тренажерами. Есть зал для групповых занятий,  большие раздевалки с душевыми. После тренировки вы можете отдохнуть в баре при спортивном клубе.
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+             <!-- Mida -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/mida.jpg" alt="Mida">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  Магазин обуви «Мида»
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  MIDA – украинская торговая марка, продукция которой любима и узнаваема практически в каждом населенном пункте нашей страны. Во многом это объясняется непревзойденным качеством комплектующих, используемых в производстве, а также высоким уровнем исполнения готовых изделий в целом. 
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+               <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+            <!-- drunk mushroom -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/drunk mushroom.jpg" alt="drunk mushroom">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  Магазин крафтового живого пива «drunk mushroom»
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  Домашняя пивоварня <br>
+                  ●Настоящее зерновое пиво<br>
+                  ●2 фирменных магазина<br>
+                  Мы стараемся создать уютную атмосферу и комфорт для Вас!
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next  js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+            <!-- cafe -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/drunk mushroom.jpg" alt="drunk mushroom">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  CAFE
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia nulla est distinctio in culpa dolor similique necessitatibus rem libero veritatis reiciendis quidem, maxime quasi nisi voluptate pariatur officiis temporibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia nulla est distinctio in culpa dolor similique necessitatibus rem libero veritatis reiciendis quidem, maxime quasi nisi voluptate pariatur officiis temporibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia nulla est distinctio in culpa dolor similique necessitatibus rem libero veritatis reiciendis quidem, maxime quasi nisi voluptate pariatur officiis temporibus?
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next  js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+   
+             <!-- Strans -->
+            <li class="catalog-backdrop-brands__item display-none js-slider-item">
+              <button class="btn-close">&#10006;</button>
+              <div class="catalog-backdrop-brands__item-wrapper">
+                <img class="catalog-backdrop-brands__item-img" src="./assets/images/catalog/slider/strans.jpg" alt="Strans">
+                <h4 class="catalog-backdrop-brands__item-title">
+                  Магазин автозапчастей «Strans»
+                </h4>
+                <p class="catalog-backdrop-brands__item-text">
+                  Сеть Strans продолжает расширяться! Клиенты города и области имеют возможность легко и быстро получить качественный сервис и приобрести надежные запчасти для своего грузовика, автобуса или любого другого спецтранспорта. <br>
+                  Магазин полностью соответствует всем нормам и стандартам компании - все благодаря длительной и основательной подготовке к открытию. Сейчас на его полках представлен весь актуальный ассортимент и действуют все акционные предложения и скидки. Как всегда, особое внимание было уделено подготовке персонала. Благодаря этому здесь в любое время можно получить квалифицированную консультацию по продукции и полезные советы по подбору запчастей.
+                </p>
+                <button class="btn" type="button">узнать больше</button>
+              </div>
+              <div class="catalog-backdrop-brands__item-slide-navigation">
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_back  js-prev" type="button">предыдущая</button>
+                <div class="counter"><span class="js-counter-current">1</span>/<span class="js-counter-total">9</span></div>
+                <button class="btn-catalog-backdrop btn-catalog-backdrop_next  js-next" type="button">СЛЕДУЮЩАЯ</button>
+              </div>
+            </li>
+
+            
+
+            
+
+          </ul>
         </div>
       </section>
       <section class="scheme">
 
       </section>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

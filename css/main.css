@@ -356,6 +356,40 @@ summary {
   display: none;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 5px;
+  /* ширина для вертикального скролла */
+  height: 3px;
+  /* высота для горизонтального скролла */
+  background-color: transparent;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #00aeb3;
+  border-radius: 9em;
+  -webkit-box-shadow: inset 1px 1px 10px #f3faf7;
+          box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #06f3fb;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 15px;
@@ -1092,6 +1126,7 @@ summary {
 }
 
 .catalog {
+  position: relative;
   padding-top: 23px;
   padding-bottom: 23px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(10.05%, #f3fdfe), color-stop(89.1%, #e0feff));
@@ -1267,9 +1302,9 @@ summary {
   background-color: #fff;
   border-radius: 10px 10px 0 0;
   color: #00aeb3;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
-  line-height: 1.09;
+  line-height: 1.33;
   text-transform: uppercase;
 }
 
@@ -1325,6 +1360,131 @@ summary {
      object-position: center;
 }
 
+.catalog-backdrop-brands .btn-close {
+  position: absolute;
+  right: 0px;
+  top: -6px;
+  padding: 10px;
+  color: #00aeb3;
+  text-shadow: 0 0 3px red;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 280px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-wrapper {
+  background-color: #fff;
+  padding: 30px 15px 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px 10px 0 0;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-img {
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.29;
+  color: #00aeb3;
+  text-transform: uppercase;
+  max-width: 300px;
+  text-align: center;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-text {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation {
+  background-color: #e0feff;
+  height: 50px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00aeb3;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop {
+  position: relative;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: inherit;
+  cursor: pointer;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop::before, .catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 17px;
+  height: 26px;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop_back {
+  margin-left: 21px;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop_back:before {
+  background-image: url("../assets/images/backdrop/back-arrow.png");
+  left: -21px;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop_next {
+  margin-right: 21px;
+}
+
+.catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop_next:after {
+  background-image: url("../assets/images/backdrop/next-arrow.png");
+  right: -21px;
+}
+
+@media screen and (min-width: 320px) {
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 300px;
+  }
+}
+
 @media screen and (min-width: 420px) {
   .catalog-backdrop-wrapper .close {
     top: 15px;
@@ -1349,6 +1509,9 @@ summary {
     width: 117px;
     height: 91px;
   }
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 390px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1371,17 +1534,21 @@ summary {
     font-weight: 800;
     line-height: 1.25;
   }
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 530px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .catalog {
     padding-top: 50px;
     padding-bottom: 30px;
-  }
-  .catalog .catalog-backdrop__title {
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 1.43;
   }
   .catalog .catalog__title {
     font-size: 26px;
@@ -1402,12 +1569,40 @@ summary {
     top: 32px;
     font-size: 30px;
   }
+  .catalog-backdrop-wrapper .catalog-backdrop__title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 2;
+  }
   .catalog-backdrop-wrapper .catalog-backdrop__theme {
     max-width: 100%;
   }
   .catalog-backdrop-wrapper .catalog-backdrop-logo {
     width: 117px;
     height: 91px;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 700px;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__item-img {
+    width: 80%;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__item-title {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.75;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__item-text {
+    width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 950px;
   }
 }
 
@@ -1419,6 +1614,9 @@ summary {
   .catalog-backdrop-wrapper .catalog-backdrop-logo {
     width: 152px;
     height: 118px;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 1100px;
   }
 }
 
@@ -1463,17 +1661,38 @@ summary {
     width: 94px;
     height: 78px;
   }
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 1100px;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__item-title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.44;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__item-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2.13;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__item-slide-navigation .btn-catalog-backdrop {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .catalog-backdrop-wrapper .catalog-backdrop__title {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 800;
-    line-height: 1.17;
+    line-height: 1.54;
   }
   .catalog-backdrop-wrapper .catalog-backdrop-logo {
     width: 197px;
     height: 153px;
+  }
+  .catalog-backdrop-brands .catalog-backdrop-brands__list {
+    min-width: 1400px;
   }
 }
 

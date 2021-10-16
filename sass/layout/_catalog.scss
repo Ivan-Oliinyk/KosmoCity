@@ -1,4 +1,5 @@
 .catalog {
+  position: relative;
   padding-top: 23px;
   padding-bottom: 23px;
   background: linear-gradient(to right bottom, #f3fdfe 10.05%, #e0feff 89.1%);
@@ -143,7 +144,7 @@
     background-color: #fff;
     border-radius: 10px 10px 0 0;
     color: #00aeb3;
-    @include font($fs: 22px, $fw: 800, $lh: 24px);
+    @include font($fs: 18px, $fw: 800, $lh: 24px);
     text-transform: uppercase;
   }
 
@@ -174,9 +175,118 @@
   }
 
   .catalog-backdrop-logo__img {
-    // display: block;
     object-fit: contain;
     object-position: center;
+  }
+}
+
+.catalog-backdrop-brands {
+  .btn-close {
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    padding: 10px;
+    color: #00aeb3;
+    text-shadow: 0 0 3px red;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .catalog-backdrop-brands__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 280px;
+    transform: translate(-50%, -50%);
+  }
+
+  .catalog-backdrop-brands__item-wrapper {
+    background-color: #fff;
+    padding: 30px 15px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .catalog-backdrop-brands__item {
+  }
+
+  .catalog-backdrop-brands__item-img {
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .catalog-backdrop-brands__item-title {
+    margin-bottom: 15px;
+    @include font($fs: 14px, $fw: 800, $lh: 18px);
+    color: #00aeb3;
+    text-transform: uppercase;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .catalog-backdrop-brands__item-text {
+    margin-bottom: 15px;
+    @include font($fs: 12px, $fw: 400, $lh: 16px);
+  }
+
+  .catalog-backdrop-brands__item-slide-navigation {
+    background-color: #e0feff;
+    height: 50px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .catalog-backdrop-brands__item-slide-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #00aeb3;
+
+    .btn-catalog-backdrop {
+      position: relative;
+      padding: 10px 0;
+      @include font($fs: 12px, $fw: 400, $lh: 16px);
+      text-transform: uppercase;
+      color: inherit;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        display: block;
+        width: 17px;
+        height: 26px;
+      }
+    }
+
+    .btn-catalog-backdrop_back {
+      margin-left: 21px;
+      &:before {
+        background-image: url("../assets/images/backdrop/back-arrow.png");
+        left: -21px;
+      }
+    }
+
+    .btn-catalog-backdrop_next {
+      margin-right: 21px;
+      &:after {
+        background-image: url("../assets/images/backdrop/next-arrow.png");
+        right: -21px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 300px;
+    }
   }
 }
 
@@ -210,6 +320,12 @@
       height: 91px;
     }
   }
+
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 390px;
+    }
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -235,16 +351,26 @@
       @include font($fs: 16px, $fw: 800, $lh: 20px);
     }
   }
+
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 530px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .catalog {
     padding-top: 50px;
     padding-bottom: 30px;
-
-    .catalog-backdrop__title {
-      @include font($fs: 28px, $fw: 800, $lh: 40px);
-    }
 
     .catalog__title {
       @include font($fs: 26px, $fw: 800, $lh: 32px);
@@ -267,6 +393,11 @@
       top: 32px;
       font-size: 30px;
     }
+
+    .catalog-backdrop__title {
+      @include font($fs: 20px, $fw: 800, $lh: 40px);
+    }
+
     .catalog-backdrop__theme {
       max-width: 100%;
     }
@@ -274,6 +405,33 @@
     .catalog-backdrop-logo {
       width: 117px;
       height: 91px;
+    }
+  }
+
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 700px;
+    }
+
+    .catalog-backdrop-brands__item-img {
+      width: 80%;
+    }
+
+    .catalog-backdrop-brands__item-title {
+      @include font($fs: 16px, $fw: 800, $lh: 28px);
+    }
+
+    .catalog-backdrop-brands__item-text {
+      width: 80%;
+      @include font($fs: 14px, $fw: 400, $lh: 16px);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 950px;
     }
   }
 }
@@ -290,6 +448,12 @@
     .catalog-backdrop-logo {
       width: 152px;
       height: 118px;
+    }
+  }
+
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 1100px;
     }
   }
 }
@@ -342,17 +506,51 @@
       }
     }
   }
+
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 1100px;
+    }
+
+    .catalog-backdrop-brands__item-title {
+      @include font($fs: 18px, $fw: 800, $lh: 26px);
+    }
+
+    .catalog-backdrop-brands__item-text {
+      @include font($fs: 15px, $fw: 400, $lh: 32px);
+    }
+
+    .catalog-backdrop-brands__item-slide-navigation {
+      .btn-catalog-backdrop {
+        @include font($fs: 14px, $fw: 400, $lh: 16px);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .catalog-backdrop-wrapper {
     .catalog-backdrop__title {
-      @include font($fs: 36px, $fw: 800, $lh: 42px);
+      @include font($fs: 26px, $fw: 800, $lh: 40px);
     }
 
     .catalog-backdrop-logo {
       width: 197px;
       height: 153px;
+    }
+  }
+
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      min-width: 1400px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .catalog-backdrop-brands {
+    .catalog-backdrop-brands__list {
+      // min-width: 1700px;
     }
   }
 }
