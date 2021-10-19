@@ -20,19 +20,19 @@ refs.select.addEventListener("change", () => {
   }
 });
 
-refs.btns.forEach((btn, i) => {
-  btn.addEventListener("focus", () => {
-    if (selectValue == 1) {
-      showFloor(1);
-    } else if (selectValue == 2) {
-      showFloor(3);
-    } else if (selectValue == 3) {
-      showFloor(5);
-    } else if (selectValue == 4) {
-      showFloor(7);
-    }
-  });
-});
+// refs.btns.forEach((btn, i) => {
+//   btn.addEventListener("focus", () => {
+//     if (selectValue == 1) {
+//       showFloor(1);
+//     } else if (selectValue == 2) {
+//       showFloor(3);
+//     } else if (selectValue == 3) {
+//       showFloor(5);
+//     } else if (selectValue == 4) {
+//       showFloor(7);
+//     }
+//   });
+// });
 
 function showFloor(select) {
   refs.imgs.forEach((img) => {
