@@ -492,15 +492,23 @@
 
     .elem-2 {
       .elem-2-text {
+        right: 5px;
         top: 40px;
         color: #38825a;
         cursor: pointer;
         font-size: 0;
+        width: 100px;
+        font-weight: 900;
+        color: #38825a;
+        display: block;
       }
 
       .sub-text {
         display: block;
         color: #38825a;
+        display: block;
+        font-size: 0;
+        width: 100px;
       }
 
       &:hover .elem-2-text,
@@ -557,18 +565,14 @@
 .js-laser-focus.elem-2.is-active-floor {
   .comp {
     background-color: #defdec;
-    color: #38825a;
   }
-  .elem-2 {
-    .elem-2-text {
-      font-size: 12px !important;
-      width: 100px !important;
-    }
 
-    .sub-text {
-      font-size: 8px !important;
-      width: 100px !important;
-    }
+  .elem-2-text {
+    font-size: 14px;
+  }
+
+  .sub-text {
+    font-size: 10px;
   }
 }
 
