@@ -28,12 +28,6 @@
     min-height: 400px;
   }
 
-  .mobile-nav {
-  }
-
-  .mobile-nav-list {
-  }
-
   .mobile-nav-item {
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -79,12 +73,21 @@
       fill: #00aeb3;
     }
   }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     .circle-link {
-      top: -40px;
+      top: -30px;
       left: 90%;
       display: flex;
       justify-content: center;
@@ -94,6 +97,83 @@
 
     .mobile-menu {
       display: none;
+    }
+
+    .footer-content {
+      justify-content: space-around;
+    }
+
+    .footer-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-nav-list {
+      display: flex;
+    }
+
+    .footer-nav-item {
+      position: relative;
+      text-transform: uppercase;
+      margin-left: 15px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #121212;
+      transition: all 0.25s linear;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 3px;
+        bottom: -5px;
+        background-color: #00aeb3;
+        transition: all 0.25s linear;
+      }
+
+      &:before {
+        left: 50%;
+      }
+
+      &:after {
+        right: 50%;
+      }
+
+      &:hover,
+      &:focus {
+        color: #00aeb3;
+
+        &:before,
+        &:before {
+          width: 50%;
+        }
+
+        &:after,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .logo-wraper {
+      img {
+        width: 244px;
+        height: 76px;
+      }
+    }
+
+    .footer-nav-item {
+      margin-right: 25px;
+      font-size: 20px;
     }
   }
 }

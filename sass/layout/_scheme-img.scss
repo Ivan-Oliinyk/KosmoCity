@@ -642,10 +642,21 @@
 @media screen and (min-width: 1400px) {
   .scheme-content__img-wrapper {
     .container-img {
-      transform: scale(3.5);
+      transform: scale(3);
       margin-top: 100px;
       margin-bottom: 150px;
-      margin-left: 500px;
+      margin-left: 380px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .scheme-content__img-wrapper {
+    .container-img {
+      transform: scale(4);
+      margin-top: 200px;
+      margin-bottom: 250px;
+      margin-left: 600px;
     }
   }
 }
