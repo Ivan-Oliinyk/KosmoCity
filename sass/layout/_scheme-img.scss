@@ -457,6 +457,84 @@
           font-size: 8px;
         }
       }
+
+      // .comp-3.active-section {
+      //   .elem-1,
+      //   .elem-1 {
+      //     background-color: #acebf1;
+      //   }
+
+      //   .tittle,
+      //   .tittle {
+      //     font-size: 12px;
+      //   }
+
+      //   .sub-text,
+      //   .sub-text {
+      //     font-size: 8px;
+      //   }
+      // }
+    }
+  }
+
+  .fourth-floor {
+    .elem-1 {
+      .elem-1-text {
+        top: 40px;
+      }
+
+      .sub-text {
+        display: block;
+      }
+
+      &:hover .elem-1-text,
+      &:focus .elem-1-text {
+        font-size: 12px;
+        width: 90px;
+      }
+
+      &:hover .sub-text,
+      &:focus .sub-text {
+        font-size: 8px;
+        width: 100px;
+      }
+
+      &:hover .comp,
+      &:focus .comp {
+        background-color: #edd9fd;
+        color: #7844a1;
+      }
+    }
+
+    .elem-2 {
+      .elem-2-text {
+        top: 40px;
+        color: #38825a;
+        cursor: pointer;
+      }
+
+      .sub-text {
+        display: block;
+        color: #38825a;
+      }
+
+      &:hover .elem-1-text,
+      &:focus .elem-1-text {
+        font-size: 12px;
+        width: 90px;
+      }
+
+      &:hover .sub-text,
+      &:focus .sub-text {
+        font-size: 8px;
+        width: 100px;
+      }
+
+      &:hover .comp,
+      &:focus .comp {
+        background-color: #defdec;
+        color: #38825a;
+      }
     }
   }
 }

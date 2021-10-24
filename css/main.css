@@ -2568,4 +2568,59 @@ select::-ms-expand {
 .scheme-content__img-wrapper .third-floor .element-2 .comp-3:focus .sub-text {
   font-size: 8px;
 }
+
+.scheme-content__img-wrapper .fourth-floor .elem-1 .elem-1-text {
+  top: 40px;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-1 .sub-text {
+  display: block;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-1:hover .elem-1-text,
+.scheme-content__img-wrapper .fourth-floor .elem-1:focus .elem-1-text {
+  font-size: 12px;
+  width: 90px;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-1:hover .sub-text,
+.scheme-content__img-wrapper .fourth-floor .elem-1:focus .sub-text {
+  font-size: 8px;
+  width: 100px;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-1:hover .comp,
+.scheme-content__img-wrapper .fourth-floor .elem-1:focus .comp {
+  background-color: #edd9fd;
+  color: #7844a1;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-2 .elem-2-text {
+  top: 40px;
+  color: #38825a;
+  cursor: pointer;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-2 .sub-text {
+  display: block;
+  color: #38825a;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-2:hover .elem-1-text,
+.scheme-content__img-wrapper .fourth-floor .elem-2:focus .elem-1-text {
+  font-size: 12px;
+  width: 90px;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-2:hover .sub-text,
+.scheme-content__img-wrapper .fourth-floor .elem-2:focus .sub-text {
+  font-size: 8px;
+  width: 100px;
+}
+
+.scheme-content__img-wrapper .fourth-floor .elem-2:hover .comp,
+.scheme-content__img-wrapper .fourth-floor .elem-2:focus .comp {
+  background-color: #defdec;
+  color: #38825a;
+}
 /*# sourceMappingURL=main.css.map */

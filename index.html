@@ -490,20 +490,11 @@
             </select>
           </div>
           <div class="scheme-content-wrapper">
-            <!-- <div class="scheme-content__img-wrapper">
-              <img class="js-scheme-img" src="./assets/images/csheme/1-floor-empty.png" alt="1й этаж пустой">
-              <img class="display-none js-scheme-img" src="./assets/images/csheme/1-floor-full.png" alt="1й этаж">
-              <img class="display-none js-scheme-img" src="./assets/images/csheme/2-floor-empty.png" alt="2й этаж пустой">
-              <img class="display-none js-scheme-img" src="./assets/images/csheme/2-floor-full.png" alt="2й этаж">
-              <img class="display-none js-scheme-img" src="./assets/images/csheme/3-floor-empty.png" alt="3й этаж пустой">
-              <img class="display-none js-scheme-img" src="./assets/images/csheme/3-floor-full.png" alt="3й этаж">
-              <img class="display-none js-scheme-img" src="./assets/images/csheme/4-floor-empty.png" alt="4й этаж пустой">
-              <img class="display-none js-scheme-img" src="./assets/images/csheme/4-floor-full.png" alt="4й этаж">
-            </div> -->
+            
             <div class="scheme-content__img-wrapper ">
               <div class="container-img">
                 <!-- first floor -->
-                <div class="first-floor floor display-none">
+                <div class="first-floor floor js-floor">
                   <div class="elem-1 elem">Strans<br>
                     <span class="sub-elem">магазин автозапчастей</span>
                   </div>
@@ -521,7 +512,7 @@
                 </div>
 
                 <!-- second floor -->
-                <div class="second-floor floor display-none">
+                <div class="second-floor floor js-floor display-none">
                   <div class="elem-1">
                     <div class="elem-1-text">Mida
                       <span class="sub-text">Запорожская обувная фабрика</span>
@@ -544,7 +535,7 @@
                 </div>
 
                 <!-- third floor -->
-                <div class="second-floor third-floor floor ">
+                <div class="second-floor third-floor floor js-floor display-none">
                   <div class="elem-1">
                     <div class="elem-1-text">максимус
                       <span class="sub-text">спортивный тренажерный фитнес клуба</span>
@@ -576,8 +567,8 @@
                       </div>
                     </div>
 
-                    <div class="comp-3 comp">
-                      <div class="elem-1">
+                    <div class="comp-3 comp active-section" id="js-cinema">
+                      <div class="elem-1 ">
                         <div class="text">
                         <span class="tittle">космос</span>
                         <span class="sub-text">кинотеатр</span>
@@ -591,8 +582,11 @@
                 </div>
 
                 <!-- fourth floor -->
-                <div class="second-floor floor display-none">
+                <div class="second-floor fourth-floor js-floor floor display-none">
                   <div class="elem-1">
+                    <div class="elem-1-text">Роллер сити
+                      <span class="sub-text">Центр семейного отдыха и занятий спортом</span>
+                    </div>
                     <div class="comp-1 comp"></div>
                     <div class="comp-2 comp"></div>
                     <div class="comp-3 comp"></div>
@@ -601,6 +595,9 @@
                     <div class="comp-6 comp"></div>
                   </div>
                   <div class="elem-2">
+                    <div class="elem-2-text">Лазер-сити
+                      <span class="sub-text">спортивно-игровое помещение</span>
+                    </div>
                     <div class="comp-1 comp"></div>
                     <div class="comp-2 comp"></div>
                   </div>
@@ -614,30 +611,30 @@
               <li class="scheme-sub-item js-link-na" href="#">
                 отдых и спорт
                 <ul class="scheme-sub__wrapper">
-                  <li class="scheme-sub-list">Кинотеатр космос</li>
-                  <li class="scheme-sub-list">Лазер сити</li>
-                  <li class="scheme-sub-list">Роллер сити</li>
-                  <li class="scheme-sub-list">Минифутбол</li>
-                  <li class="scheme-sub-list">Фитнесс клуб</li>
+                  <li class="scheme-sub-list js-cinema">Кинотеатр космос</li>
+                  <li class="scheme-sub-list js-laser-city">Лазер сити</li>
+                  <li class="scheme-sub-list js-roller-city">Роллер сити</li>
+                  <li class="scheme-sub-list js-mini-soccer">Минифутбол</li>
+                  <li class="scheme-sub-list js-fitness">Фитнесс клуб</li>
                 </ul>
               </li>
               <li class="scheme-sub-item">
                 одежда и обувь
                 <ul class="scheme-sub__wrapper">
-                  <li class="scheme-sub-list">Мида</li>
+                  <li class="scheme-sub-list js-mida">Мида</li>
                 </ul>
               </li>
               <li class="scheme-sub-item">
                 кафе и рестораны
                 <ul class="scheme-sub__wrapper">
-                  <li class="scheme-sub-list">Пяный гриб</li>
-                  <li class="scheme-sub-list">Cafe</li>
+                  <li class="scheme-sub-list js-drinck">Пяный гриб</li>
+                  <li class="scheme-sub-list js-cafe">Cafe</li>
                 </ul>
               </li>
               <li class="scheme-sub-item">
                 разное
                 <ul class="scheme-sub__wrapper">
-                  <li class="scheme-sub-list">Strans</li>
+                  <li class="scheme-sub-list js-strans">Strans</li>
                 </ul>
               </li>
             </ul>
