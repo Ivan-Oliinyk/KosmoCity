@@ -3,6 +3,15 @@ const refs = {
   btns: document.querySelectorAll(".scheme-btn"),
   floors: document.querySelectorAll(".js-floor"),
   links: document.querySelectorAll(".scheme-sub-list"),
+
+  //scheme
+  btnRollerCity: document.querySelector(".js-roller-city"),
+  btnFocus: document.querySelectorAll(".js-focus-scheme"),
+  btnRollerFocus: document.querySelector(".js-roller-focus"),
+  schemeComps: document.querySelectorAll(".comp"),
+
+  btnLaserCity: document.querySelector(".js-laser-city"),
+  btnLaserfocus: document.querySelector(".js-laser-focus"),
 };
 
 let selectValue = 1;
@@ -26,19 +35,15 @@ refs.links.forEach((link) => {
     if (link.classList.contains("js-cinema")) {
       changeFloor(3);
     }
-
     if (link.classList.contains("js-laser-city")) {
       changeFloor(4);
     }
-
     if (link.classList.contains("js-roller-city")) {
       changeFloor(4);
     }
-
     if (link.classList.contains("js-mini-soccer")) {
       changeFloor(3);
     }
-
     if (link.classList.contains("js-fitness")) {
       changeFloor(3);
     }
@@ -58,6 +63,20 @@ refs.links.forEach((link) => {
     if (link.classList.contains("js-strans")) {
       changeFloor(1);
     }
+  });
+});
+
+refs.btnLaserCity.addEventListener("click", () => {
+  refs.btnLaserfocus.classList.add("is-active-floor");
+});
+
+refs.btnRollerCity.addEventListener("click", () => {
+  refs.btnRollerFocus.classList.add("is-active-floor");
+});
+
+refs.btnFocus.forEach((el) => {
+  el.addEventListener("click", () => {
+    refs.btnRollerFocus.classList.remove("is-active-floor");
   });
 });
 

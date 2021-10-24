@@ -2151,7 +2151,6 @@ select::-ms-expand {
 .scheme-content__img-wrapper .first-floor .elem-1:hover, .scheme-content__img-wrapper .first-floor .elem-1:focus {
   font-size: 12px;
   line-height: 17px;
-  background-color: red;
   border-color: #6b69ba;
   background-color: #e1e0ff;
   color: #6b69ba;
@@ -2571,22 +2570,22 @@ select::-ms-expand {
 
 .scheme-content__img-wrapper .fourth-floor .elem-1 .elem-1-text {
   top: 40px;
+  width: 90px;
 }
 
 .scheme-content__img-wrapper .fourth-floor .elem-1 .sub-text {
   display: block;
+  width: 100px;
 }
 
 .scheme-content__img-wrapper .fourth-floor .elem-1:hover .elem-1-text,
 .scheme-content__img-wrapper .fourth-floor .elem-1:focus .elem-1-text {
   font-size: 12px;
-  width: 90px;
 }
 
 .scheme-content__img-wrapper .fourth-floor .elem-1:hover .sub-text,
 .scheme-content__img-wrapper .fourth-floor .elem-1:focus .sub-text {
   font-size: 8px;
-  width: 100px;
 }
 
 .scheme-content__img-wrapper .fourth-floor .elem-1:hover .comp,
@@ -2599,6 +2598,7 @@ select::-ms-expand {
   top: 40px;
   color: #38825a;
   cursor: pointer;
+  font-size: 0;
 }
 
 .scheme-content__img-wrapper .fourth-floor .elem-2 .sub-text {
@@ -2606,15 +2606,16 @@ select::-ms-expand {
   color: #38825a;
 }
 
-.scheme-content__img-wrapper .fourth-floor .elem-2:hover .elem-1-text,
-.scheme-content__img-wrapper .fourth-floor .elem-2:focus .elem-1-text {
-  font-size: 12px;
+.scheme-content__img-wrapper .fourth-floor .elem-2:hover .elem-2-text,
+.scheme-content__img-wrapper .fourth-floor .elem-2:focus .elem-2-text {
+  font-size: 14px;
+  font-weight: 900;
   width: 90px;
 }
 
 .scheme-content__img-wrapper .fourth-floor .elem-2:hover .sub-text,
 .scheme-content__img-wrapper .fourth-floor .elem-2:focus .sub-text {
-  font-size: 8px;
+  font-size: 10px;
   width: 100px;
 }
 
@@ -2622,5 +2623,92 @@ select::-ms-expand {
 .scheme-content__img-wrapper .fourth-floor .elem-2:focus .comp {
   background-color: #defdec;
   color: #38825a;
+}
+
+.scheme-sub-list.js-cinema:hover .scheme-content__img-wrapper .third-floor .element-2 .comp-3 .elem-1, .scheme-sub-list.js-cinema:focus .scheme-content__img-wrapper .third-floor .element-2 .comp-3 .elem-1 {
+  background-color: red !important;
+  z-index: 99 !important;
+  color: red !important;
+}
+
+.js-laser-focus.elem-2.is-active-floor .comp {
+  background-color: #defdec;
+  color: #38825a;
+}
+
+.js-laser-focus.elem-2.is-active-floor .elem-2 .elem-2-text {
+  font-size: 12px !important;
+  width: 100px !important;
+}
+
+.js-laser-focus.elem-2.is-active-floor .elem-2 .sub-text {
+  font-size: 8px !important;
+  width: 100px !important;
+}
+
+.js-roller-focus.elem-1.is-active-floor .comp {
+  background-color: #edd9fd;
+  color: #7844a1;
+}
+
+.js-roller-focus.elem-1.is-active-floor .elem-1-text {
+  font-size: 12px;
+}
+
+.js-roller-focus.elem-1.is-active-floor .sub-text {
+  font-size: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .scheme-content__img-wrapper .container-img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scheme-content__img-wrapper .container-img {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 120px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scheme-content__img-wrapper .container-img {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scheme-content__img-wrapper .container-img {
+    -webkit-transform: scale(2.3);
+            transform: scale(2.3);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .scheme-content__img-wrapper .container-img {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 500px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
