@@ -18,6 +18,21 @@ const refs = {
 
   btnFitnes: document.querySelector(".js-fitness"),
   btnFitnesFocus: document.querySelector(".js-maksimus-focus"),
+
+  btnSoccer: document.querySelector(".js-mini-soccer"),
+  btnSoccerFocus: document.querySelector(".js-soccer-focus"),
+
+  btnMida: document.querySelector(".js-mida"),
+  btnMidaFocus: document.querySelector(".js-mida-focus"),
+
+  btnDrinck: document.querySelector(".js-drinck"),
+  btnDrinckFocus: document.querySelector(".js-drinck-focus"),
+
+  btnCafe: document.querySelector(".js-cafe"),
+  btnCafeFocus: document.querySelector(".js-cafe-focus"),
+
+  btnStrans: document.querySelector(".js-strans"),
+  btnStransFocus: document.querySelector(".js-strans-focus"),
 };
 
 let selectValue = 1;
@@ -88,6 +103,25 @@ refs.btnFitnes.addEventListener("click", () => {
   refs.btnFitnesFocus.classList.add("is-active-floor");
 });
 
+refs.btnSoccer.addEventListener("click", () => {
+  refs.btnSoccerFocus.classList.add("is-active-floor");
+});
+
+refs.btnMida.addEventListener("click", () => {
+  refs.btnMidaFocus.classList.add("is-active-floor");
+});
+
+refs.btnDrinck.addEventListener("click", () => {
+  refs.btnDrinckFocus.classList.add("is-active-floor");
+});
+
+refs.btnCafe.addEventListener("click", () => {
+  refs.btnCafeFocus.classList.add("is-active-floor");
+});
+
+refs.btnStrans.addEventListener("click", () => {
+  refs.btnStransFocus.classList.add("is-active-floor");
+});
 
 
 refs.btnFocus.forEach((el) => {
@@ -96,6 +130,11 @@ refs.btnFocus.forEach((el) => {
     refs.btnLaserfocus.classList.remove("is-active-floor");
     refs.btnCinemaFocus.classList.remove("is-active-floor");
     refs.btnFitnesFocus.classList.remove("is-active-floor");
+    refs.btnSoccerFocus.classList.remove("is-active-floor");
+    refs.btnMidaFocus.classList.remove("is-active-floor");
+    refs.btnDrinckFocus.classList.remove("is-active-floor");
+    refs.btnCafeFocus.classList.remove("is-active-floor");
+    refs.btnStransFocus.classList.remove("is-active-floor");
   });
 });
 
