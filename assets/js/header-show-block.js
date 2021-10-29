@@ -4,5 +4,5 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     hideBlocks.forEach((elem) => elem.classList.remove("hide-block"));
-  }, 2000);
+  }, 1000);
 });

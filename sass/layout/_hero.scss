@@ -98,6 +98,14 @@
         top: 210px;
       }
     }
+
+    .hero__title {
+      @include font($fs: 25px, $fw: 800, $lh: 30px);
+    }
+
+    .hero__adress {
+      @include font($fs: 20px, $fw: 800, $lh: 25px);
+    }
   }
 }
 
@@ -113,12 +121,12 @@
     .hero__title {
       margin-top: 0;
       max-width: 320px;
-      @include font($fs: 30px, $fw: 800, $lh: 45px);
+      @include font($fs: 40px, $fw: 800, $lh: 45px);
     }
 
     .hero__adress {
       margin-top: 83px;
-      @include font($fs: 20px, $fw: 800, $lh: 36px);
+      @include font($fs: 30px, $fw: 800, $lh: 36px);
     }
   }
 

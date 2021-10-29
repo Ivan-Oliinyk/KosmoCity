@@ -598,7 +598,7 @@ select::-ms-expand {
 .header .header-drop-container__nav .link:after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -4px;
   display: block;
   width: 0;
   height: 3px;
@@ -704,9 +704,9 @@ select::-ms-expand {
     padding: 10px 10px;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.17;
+    line-height: 1;
   }
   .header .header-drop-container__nav .item:not(:last-of-type) {
     margin: 0;
@@ -749,6 +749,11 @@ select::-ms-expand {
     margin-bottom: 10px;
     width: 25px;
     height: 25px;
+  }
+  .header .header-drop-container__nav .item {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0.88;
   }
 }
 
@@ -858,6 +863,16 @@ select::-ms-expand {
     left: -175px;
     top: 210px;
   }
+  .hero .hero__title {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  .hero .hero__adress {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.25;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -871,15 +886,15 @@ select::-ms-expand {
   .hero .hero__title {
     margin-top: 0;
     max-width: 320px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 800;
-    line-height: 1.5;
+    line-height: 1.13;
   }
   .hero .hero__adress {
     margin-top: 83px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 800;
-    line-height: 1.8;
+    line-height: 1.2;
   }
   .hide-block {
     -webkit-transform: translateX(130%);
@@ -1398,7 +1413,7 @@ select::-ms-expand {
           align-items: center;
   margin-bottom: 10px;
   width: 90px;
-  height: 70px;
+  height: 90px;
 }
 
 .catalog-backdrop-wrapper .catalog-backdrop-logo__img {
@@ -1557,7 +1572,7 @@ select::-ms-expand {
   }
   .catalog-backdrop-list .catalog-backdrop-logo {
     width: 117px;
-    height: 91px;
+    height: 117px;
   }
   .catalog-backdrop-brands .catalog-backdrop-brands__list {
     min-width: 390px;
@@ -1629,7 +1644,7 @@ select::-ms-expand {
   }
   .catalog-backdrop-wrapper .catalog-backdrop-logo {
     width: 117px;
-    height: 91px;
+    height: 117px;
   }
   .catalog-backdrop-brands .catalog-backdrop-brands__list {
     min-width: 700px;
@@ -1669,7 +1684,7 @@ select::-ms-expand {
   }
   .catalog-backdrop-wrapper .catalog-backdrop-logo {
     width: 152px;
-    height: 118px;
+    height: 152px;
   }
   .catalog-backdrop-brands .catalog-backdrop-brands__list {
     min-width: 1100px;
@@ -1745,7 +1760,7 @@ select::-ms-expand {
   }
   .catalog-backdrop-wrapper .catalog-backdrop-logo {
     width: 197px;
-    height: 153px;
+    height: 197px;
   }
   .catalog-backdrop-brands .catalog-backdrop-brands__list {
     min-width: 1400px;

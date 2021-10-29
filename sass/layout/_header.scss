@@ -112,7 +112,7 @@
     .link:after {
       content: "";
       position: absolute;
-      bottom: -5px;
+      bottom: -4px;
       display: block;
       width: 0;
       height: 3px;
@@ -209,7 +209,7 @@
         padding: 10px 10px;
         display: inline-block;
         text-transform: uppercase;
-        @include font($fs: 12px, $fw: 600, $lh: 14px);
+        @include font($fs: 14px, $fw: 600, $lh: 14px);
       }
 
       .item:not(:last-of-type) {
@@ -265,6 +265,12 @@
         margin-bottom: 10px;
         width: 25px;
         height: 25px;
+      }
+    }
+
+    .header-drop-container__nav {
+      .item {
+        @include font($fs: 16px, $fw: 600, $lh: 14px);
       }
     }
   }

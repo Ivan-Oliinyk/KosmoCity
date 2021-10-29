@@ -77,6 +77,7 @@ refs.btnRollerCity.addEventListener("click", () => {
 refs.btnFocus.forEach((el) => {
   el.addEventListener("click", () => {
     refs.btnRollerFocus.classList.remove("is-active-floor");
+    refs.btnLaserfocus.classList.remove("is-active-floor");
   });
 });
 
