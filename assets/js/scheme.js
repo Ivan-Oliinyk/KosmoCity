@@ -12,6 +12,12 @@ const refs = {
 
   btnLaserCity: document.querySelector(".js-laser-city"),
   btnLaserfocus: document.querySelector(".js-laser-focus"),
+
+  btnCinema: document.querySelector(".js-cinema"),
+  btnCinemaFocus: document.querySelector(".js-cinema-focus"),
+
+  btnFitnes: document.querySelector(".js-fitness"),
+  btnFitnesFocus: document.querySelector(".js-maksimus-focus"),
 };
 
 let selectValue = 1;
@@ -74,10 +80,22 @@ refs.btnRollerCity.addEventListener("click", () => {
   refs.btnRollerFocus.classList.add("is-active-floor");
 });
 
+refs.btnCinema.addEventListener("click", () => {
+  refs.btnCinemaFocus.classList.add("is-active-floor");
+});
+
+refs.btnFitnes.addEventListener("click", () => {
+  refs.btnFitnesFocus.classList.add("is-active-floor");
+});
+
+
+
 refs.btnFocus.forEach((el) => {
   el.addEventListener("click", () => {
     refs.btnRollerFocus.classList.remove("is-active-floor");
     refs.btnLaserfocus.classList.remove("is-active-floor");
+    refs.btnCinemaFocus.classList.remove("is-active-floor");
+    refs.btnFitnesFocus.classList.remove("is-active-floor");
   });
 });
 

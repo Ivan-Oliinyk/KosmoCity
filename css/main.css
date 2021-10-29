@@ -2679,6 +2679,30 @@ select::-ms-expand {
   font-size: 8px;
 }
 
+.scheme-content__img-wrapper .third-floor .element-2 .comp-3.is-active-floor .elem-1 {
+  background-color: #acebf1;
+}
+
+.scheme-content__img-wrapper .third-floor .element-2 .comp-3.is-active-floor .elem-1 .text .tittle {
+  font-size: 12px;
+}
+
+.scheme-content__img-wrapper .third-floor .element-2 .comp-3.is-active-floor .elem-1 .text .sub-text {
+  font-size: 8px;
+}
+
+.scheme-content__img-wrapper .second-floor .elem-1.is-active-floor .comp {
+  background-color: #dafbe0;
+}
+
+.scheme-content__img-wrapper .second-floor .elem-1.is-active-floor .elem-1-text {
+  font-size: 14px;
+}
+
+.scheme-content__img-wrapper .second-floor .elem-1.is-active-floor .sub-text {
+  font-size: 12px;
+}
+
 @media screen and (min-width: 480px) {
   .scheme-content__img-wrapper .container-img {
     -webkit-transform: scale(1.4);
